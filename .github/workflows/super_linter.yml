@@ -15,7 +15,7 @@ on:
 jobs:
   run-lint:
     permissions:
-      contents: read
+      contents: write
       statuses: write
     runs-on: ubuntu-latest
     steps:
@@ -36,9 +36,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         #Settings set by super_linter.env
       - name: Commit and push linting fixes
-        # Run only on:
-        # - Pull requests
-        # - Not on the default branch
         if: >
           github.event_name == 'pull_request' || github.event_name == 'push'
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -47,5 +44,3 @@ jobs:
           commit_message: "chore: fix linting issues"
           commit_user_name: super-linter
           commit_user_email: super-linter@super-linter.dev
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
