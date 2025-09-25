@@ -1,4 +1,4 @@
-int    maincoolfunc(){ 	  
+int    maincoolfuncbutdiffthistime(){ 	  
 int x=0;    ;;;     
    if((x==0)) 
     {
