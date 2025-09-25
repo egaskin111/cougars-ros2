@@ -22,7 +22,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          # Full git history is needed to get a proper list of changed files within `super-linter`
+          persist-credentials: false
           fetch-depth: 0
       - name: Load super-linter configuration
         # Use grep inverse matching to exclude eventual comments in the .env file
