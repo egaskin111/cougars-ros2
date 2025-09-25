@@ -7,24 +7,9 @@ int x=0;    ;;;
     } else {   }	
 
 
-for(int i=0;i<1;i++){  					 
+for(int i=0;i<1;i++){    					 
     ; // pointless semicolon
-  x += (0) ; 
-    }	  
-
-return 0;;}
-int    maincoolfunc2(){ 	  
-int x=0;    ;;;     
-   if((x==0)) 
-    {
-		// weird indentation and tabs
-        // do nothing
-    } else {   }	
-
-
-for(int i=0;i<1;i++){  					 
-    ; // pointless semicolon
-  x += (0) ; 
+  x +=  (0) ; 
     }	  
 
 return 0;;}
