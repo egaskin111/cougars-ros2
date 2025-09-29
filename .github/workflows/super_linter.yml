@@ -7,9 +7,6 @@
 name: Lint Code Base
 
 on:
-  push:
-    #branches to enforce on
-    branches: ["main", "dev"]
   pull_request:
     branches: ["main", "dev"]
 jobs:
